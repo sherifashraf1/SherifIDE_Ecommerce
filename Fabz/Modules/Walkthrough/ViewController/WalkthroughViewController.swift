@@ -22,6 +22,7 @@ class WalkthroughViewController: UIViewController , UIScrollViewDelegate {
     @IBOutlet weak var scrollViewLeading: NSLayoutConstraint!
     
     var slides:[Slide] = []
+    var i = 0
 
     
     override func viewDidLayoutSubviews() {
@@ -43,8 +44,20 @@ class WalkthroughViewController: UIViewController , UIScrollViewDelegate {
         pageControl.currentPage = 0
         view.bringSubviewToFront(pageControl)
         
-
+        let scrollingTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.newStartScrolling), userInfo: nil, repeats: true)
+            scrollingTimer.fire()
     }
+    @objc func newStartScrolling()
+    {
+        if i == slides.count {
+            i = 0
+        }
+        let x = CGFloat(i) * scrollView.frame.size.width
+        scrollView.setContentOffset(CGPoint(x: x, y: 0), animated: true)
+        self.i += 1
+    }
+
+    
     
 
     func createSlides() -> [Slide] {
@@ -108,5 +121,4 @@ class WalkthroughViewController: UIViewController , UIScrollViewDelegate {
     
 
 }
-
 
