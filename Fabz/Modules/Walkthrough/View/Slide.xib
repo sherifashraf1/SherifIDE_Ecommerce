@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="JF Flat Regular.ttf">
+            <string>JFFlat-Regular</string>
+        </array>
+        <array key="MyriadPro-Regular.otf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="Fabz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide1" translatesAutoresizingMaskIntoConstraints="NO" id="L4U-kK-5e9">
+                    <rect key="frame" x="0.0" y="30" width="335" height="285"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="285" id="FvD-ev-4y7"/>
+                        <constraint firstAttribute="width" constant="335" id="ugk-pJ-Iyq"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zzE-Rn-uYU">
+                    <rect key="frame" x="41" y="355" width="334" height="115"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFc-DX-lry">
+                            <rect key="frame" x="0.0" y="0.0" width="334" height="2"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="IDF-rq-kES"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop Everywere" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycr-gJ-gdn">
+                            <rect key="frame" x="0.0" y="38" width="177.33333333333334" height="23"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23" id="Vxq-B9-FbD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="JFFlat-Regular" family="JF Flat" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGH QUALITY MATERIAL EGYPTION FASHION ONLINE STORE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5B6-iw-mzD">
+                            <rect key="frame" x="0.0" y="81" width="326" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="Oj7-Wk-C0w"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="tFc-DX-lry" secondAttribute="trailing" id="8CE-zL-QK1"/>
+                        <constraint firstItem="tFc-DX-lry" firstAttribute="top" secondItem="zzE-Rn-uYU" secondAttribute="top" id="kAt-oS-E7D"/>
+                        <constraint firstItem="tFc-DX-lry" firstAttribute="leading" secondItem="zzE-Rn-uYU" secondAttribute="leading" id="ob8-2R-KKy"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+            <constraints>
+                <constraint firstItem="L4U-kK-5e9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5v2-hz-d6T"/>
+                <constraint firstAttribute="trailing" secondItem="zzE-Rn-uYU" secondAttribute="trailing" id="Gbm-3t-o48"/>
+                <constraint firstItem="zzE-Rn-uYU" firstAttribute="top" secondItem="L4U-kK-5e9" secondAttribute="bottom" constant="40" id="Lnb-e5-v5P"/>
+                <constraint firstItem="zzE-Rn-uYU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="41" id="UgH-9b-RyQ"/>
+                <constraint firstItem="L4U-kK-5e9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="thc-X8-7Wf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageDescription" destination="5B6-iw-mzD" id="Hm8-Mn-rRs"/>
+                <outlet property="imageTitle" destination="Ycr-gJ-gdn" id="J5O-Yh-yEg"/>
+                <outlet property="imageView" destination="L4U-kK-5e9" id="XGc-wD-V7Q"/>
+                <outlet property="lineView" destination="tFc-DX-lry" id="LhD-Ms-AWl"/>
+            </connections>
+            <point key="canvasLocation" x="48.550724637681164" y="43.206521739130437"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="slide1" width="335" height="280"/>
+    </resources>
+</document>
