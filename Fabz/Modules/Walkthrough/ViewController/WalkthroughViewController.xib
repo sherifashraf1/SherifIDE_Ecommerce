@@ -31,23 +31,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MS4-kS-GsE">
-                    <rect key="frame" x="0.0" y="98" width="375" height="564"/>
+                    <rect key="frame" x="0.0" y="98" width="335" height="564"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
                 </scrollView>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="226" translatesAutoresizingMaskIntoConstraints="NO" id="iXW-JM-1vh">
-                    <rect key="frame" x="40" y="73" width="296" height="12"/>
+                    <rect key="frame" x="40" y="73" width="295" height="12"/>
                     <subviews>
                         <pageControl opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Vzc-CW-YDe">
-                            <rect key="frame" x="0.0" y="0.0" width="40" height="12"/>
+                            <rect key="frame" x="0.0" y="0.0" width="39" height="12"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="pageIndicatorTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </pageControl>
                         <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBi-Fa-AY5">
-                            <rect key="frame" x="266" y="0.0" width="30" height="12"/>
+                            <rect key="frame" x="265" y="0.0" width="30" height="12"/>
                             <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="6Qa-Fr-iJT"/>
                                 <constraint firstAttribute="height" constant="12" id="A3J-Ud-ckr"/>
+                                <constraint firstAttribute="width" constant="30" id="E46-Z5-dHm"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,6 +59,11 @@
                             </connections>
                         </button>
                     </subviews>
+                    <constraints>
+                        <constraint firstItem="cBi-Fa-AY5" firstAttribute="top" secondItem="iXW-JM-1vh" secondAttribute="top" id="3kw-ge-Bk2"/>
+                        <constraint firstAttribute="bottom" secondItem="cBi-Fa-AY5" secondAttribute="bottom" id="Mqb-Lu-Y6b"/>
+                        <constraint firstAttribute="trailing" secondItem="cBi-Fa-AY5" secondAttribute="trailing" id="t0F-ch-eRD"/>
+                    </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uC9-X6-QEv">
                     <rect key="frame" x="40" y="722" width="295" height="50"/>
@@ -86,6 +93,7 @@
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             <constraints>
+                <constraint firstItem="cBi-Fa-AY5" firstAttribute="trailing" secondItem="MS4-kS-GsE" secondAttribute="trailing" id="5qG-7Z-6yb"/>
                 <constraint firstItem="MS4-kS-GsE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DOP-VW-ukb"/>
                 <constraint firstItem="uC9-X6-QEv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="Df5-wq-67o"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uC9-X6-QEv" secondAttribute="trailing" constant="40" id="Yzr-pp-aaF"/>
@@ -94,9 +102,9 @@
                 <constraint firstItem="iXW-JM-1vh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="dLb-Yx-iRw"/>
                 <constraint firstItem="MS4-kS-GsE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gQu-Ns-ma7"/>
                 <constraint firstAttribute="bottom" secondItem="uC9-X6-QEv" secondAttribute="bottom" constant="40" id="i0x-ET-aqV"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MS4-kS-GsE" secondAttribute="trailing" id="kKx-MB-tyl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MS4-kS-GsE" secondAttribute="trailing" constant="40" id="kKx-MB-tyl"/>
                 <constraint firstAttribute="bottom" secondItem="MS4-kS-GsE" secondAttribute="bottom" constant="150" id="q2f-yo-SOz"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iXW-JM-1vh" secondAttribute="trailing" constant="39" id="vfy-Zh-7Ok"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iXW-JM-1vh" secondAttribute="trailing" constant="40" id="vfy-Zh-7Ok"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
