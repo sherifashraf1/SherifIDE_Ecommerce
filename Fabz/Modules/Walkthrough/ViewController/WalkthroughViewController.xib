@@ -22,7 +22,6 @@
                 <outlet property="scrollViewLeading" destination="gQu-Ns-ma7" id="slE-1l-sSB"/>
                 <outlet property="scrollViewTrailiang" destination="kKx-MB-tyl" id="PjN-qC-taU"/>
                 <outlet property="signUpBtn" destination="PKS-02-RMO" id="kUW-5c-WTJ"/>
-                <outlet property="skipBtn" destination="cBi-Fa-AY5" id="zWi-2r-70i"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -53,6 +52,9 @@
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="SKIP"/>
+                            <connections>
+                                <action selector="skipBtn:" destination="-1" eventType="touchUpInside" id="kxl-ek-0de"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
@@ -91,7 +93,7 @@
                 <constraint firstItem="iXW-JM-1vh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="73" id="abj-l8-HhY"/>
                 <constraint firstItem="iXW-JM-1vh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="dLb-Yx-iRw"/>
                 <constraint firstItem="MS4-kS-GsE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gQu-Ns-ma7"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uC9-X6-QEv" secondAttribute="bottom" constant="40" id="i0x-ET-aqV"/>
+                <constraint firstAttribute="bottom" secondItem="uC9-X6-QEv" secondAttribute="bottom" constant="40" id="i0x-ET-aqV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MS4-kS-GsE" secondAttribute="trailing" id="kKx-MB-tyl"/>
                 <constraint firstAttribute="bottom" secondItem="MS4-kS-GsE" secondAttribute="bottom" constant="150" id="q2f-yo-SOz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iXW-JM-1vh" secondAttribute="trailing" constant="39" id="vfy-Zh-7Ok"/>

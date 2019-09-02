@@ -16,11 +16,10 @@ class Slide: UIView {
     
     lazy var slide1SubLineView = UIView(frame: CGRect(x: lineView.frame.minX, y: 0, width: lineView.frame.width/7 , height: lineView.frame.height))
     
-    
     lazy var slide2SubLineView = UIView(frame: CGRect(x: lineView.frame.minX + 50, y: 0, width: lineView.frame.width/7 , height: lineView.frame.height))
-
     
-    lazy var slide3SubLineView = UIView(frame: CGRect(x: lineView.frame.minX + 100, y: 0, width: lineView.frame.width/7 , height: lineView.frame.height))
-
+    lazy var slide3SubLineView : UIView = {UIView(frame: CGRect(x: lineView.frame.minX + 100, y: 0, width: lineView.frame.width/7 , height: lineView.frame.height))
+        
+    }()
     
 }
