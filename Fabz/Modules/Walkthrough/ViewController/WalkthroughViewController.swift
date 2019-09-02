@@ -63,7 +63,7 @@ class WalkthroughViewController: UIViewController {
     
     private func createSlide1()-> Slide{
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide1.slide1SubLineView.backgroundColor = UIColor(displayP3Red: 255/255, green: 255/255, blue: 255/255, alpha: 0.3)
+        slide1.slide1SubLineView.backgroundColor = UIColor.IDEColor
         slide1.lineView.addSubview(slide1.slide1SubLineView)
         slide1.imageView.image = UIImage(named: "slide1")
         slide1.imageTitle.text = "Shop Everywere"
@@ -74,8 +74,7 @@ class WalkthroughViewController: UIViewController {
     
     private func createSlide2()-> Slide{
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide2.slide2SubLineView.backgroundColor = UIColor(displayP3Red: 255/255, green: 255/255, blue: 255/255, alpha: 0.3)
-        
+        slide2.slide2SubLineView.backgroundColor = UIColor.IDEColor
         slide2.lineView.addSubview(slide2.slide2SubLineView)
         slide2.imageView.image = UIImage(named: "slide2")
         slide2.imageTitle.text = "IDEAcademy"
@@ -85,7 +84,7 @@ class WalkthroughViewController: UIViewController {
     
     private func createSlide3()-> Slide{
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide3.slide3SubLineView.backgroundColor = UIColor(displayP3Red: 255/255, green: 255/255, blue: 255/255, alpha: 0.3)
+        slide3.slide3SubLineView.backgroundColor = UIColor.IDEColor
         slide3.lineView.addSubview(slide3.slide3SubLineView)
         slide3.imageView.image = UIImage(named: "slide3")
         slide3.imageTitle.text = "Sherif Ashraf Hassan"
@@ -129,3 +128,5 @@ extension WalkthroughViewController : UIScrollViewDelegate {
     }
     
 }
+
+

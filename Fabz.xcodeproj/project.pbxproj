@@ -16,7 +16,7 @@
 		39DB1F2122F7B200005697F7 /* FabzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB1F2022F7B200005697F7 /* FabzTests.swift */; };
 		E06CD3932319991400EA3282 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CD3912319991400EA3282 /* WalkthroughViewController.swift */; };
 		E06CD3942319991400EA3282 /* WalkthroughViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E06CD3922319991400EA3282 /* WalkthroughViewController.xib */; };
-		E06CD3972319D69200EA3282 /* CustomPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CD3962319D69200EA3282 /* CustomPageController.swift */; };
+		E06CD3972319D69200EA3282 /* CustomPageControl + PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CD3962319D69200EA3282 /* CustomPageControl + PageControl.swift */; };
 		E06CD39A2319EDD600EA3282 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CD3992319EDD600EA3282 /* Slide.swift */; };
 		E06CD39C2319EDFD00EA3282 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = E06CD39B2319EDFD00EA3282 /* Slide.xib */; };
 		E06CD3A02319F39300EA3282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E06CD39F2319F39300EA3282 /* Assets.xcassets */; };
@@ -26,6 +26,7 @@
 		E0C7991D231492D70020F595 /* JF Flat Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0C7991B231492D70020F595 /* JF Flat Regular.ttf */; };
 		E0C7991E231492D70020F595 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E0C7991C231492D70020F595 /* MyriadPro-Regular.otf */; };
 		E0C799282314981C0020F595 /* CustomBTN.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C799272314981C0020F595 /* CustomBTN.swift */; };
+		E0E30368231D9A0900663225 /* IDEColor + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E30367231D9A0900663225 /* IDEColor + UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +53,7 @@
 		39DB1F2222F7B200005697F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E06CD3912319991400EA3282 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		E06CD3922319991400EA3282 /* WalkthroughViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkthroughViewController.xib; sourceTree = "<group>"; };
-		E06CD3962319D69200EA3282 /* CustomPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageController.swift; sourceTree = "<group>"; };
+		E06CD3962319D69200EA3282 /* CustomPageControl + PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomPageControl + PageControl.swift"; sourceTree = "<group>"; };
 		E06CD3992319EDD600EA3282 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		E06CD39B2319EDFD00EA3282 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		E06CD39F2319F39300EA3282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		E0C7991B231492D70020F595 /* JF Flat Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JF Flat Regular.ttf"; sourceTree = "<group>"; };
 		E0C7991C231492D70020F595 /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
 		E0C799272314981C0020F595 /* CustomBTN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBTN.swift; sourceTree = "<group>"; };
+		E0E30367231D9A0900663225 /* IDEColor + UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDEColor + UIColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,14 +141,6 @@
 			path = Walkthrough;
 			sourceTree = "<group>";
 		};
-		E06CD3952319D65400EA3282 /* CustomPageController */ = {
-			isa = PBXGroup;
-			children = (
-				E06CD3962319D69200EA3282 /* CustomPageController.swift */,
-			);
-			path = CustomPageController;
-			sourceTree = "<group>";
-		};
 		E06CD3982319EDBA00EA3282 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,7 +209,7 @@
 		E0C79919231492C40020F595 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				E06CD3952319D65400EA3282 /* CustomPageController */,
+				E0E30366231D99DB00663225 /* Extenstions */,
 				E0C79921231495D50020F595 /* ButtonConfig */,
 				E0C7991A231492CB0020F595 /* Fonts */,
 			);
@@ -237,6 +231,15 @@
 				E0C799272314981C0020F595 /* CustomBTN.swift */,
 			);
 			path = ButtonConfig;
+			sourceTree = "<group>";
+		};
+		E0E30366231D99DB00663225 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				E06CD3962319D69200EA3282 /* CustomPageControl + PageControl.swift */,
+				E0E30367231D9A0900663225 /* IDEColor + UIColor.swift */,
+			);
+			path = Extenstions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,7 +354,8 @@
 				E0C799282314981C0020F595 /* CustomBTN.swift in Sources */,
 				39DB1F0C22F7B1FF005697F7 /* AppDelegate.swift in Sources */,
 				180246A9231582C100441D74 /* AuthenticationViewController.swift in Sources */,
-				E06CD3972319D69200EA3282 /* CustomPageController.swift in Sources */,
+				E06CD3972319D69200EA3282 /* CustomPageControl + PageControl.swift in Sources */,
+				E0E30368231D9A0900663225 /* IDEColor + UIColor.swift in Sources */,
 				E06CD39A2319EDD600EA3282 /* Slide.swift in Sources */,
 				E0C79916231492830020F595 /* SplashViewController.swift in Sources */,
 				E06CD3932319991400EA3282 /* WalkthroughViewController.swift in Sources */,
