@@ -23,7 +23,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide1" translatesAutoresizingMaskIntoConstraints="NO" id="L4U-kK-5e9">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L4U-kK-5e9">
                     <rect key="frame" x="0.0" y="30" width="335" height="285"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="285" id="FvD-ev-4y7"/>
@@ -31,16 +31,16 @@
                     </constraints>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zzE-Rn-uYU">
-                    <rect key="frame" x="41" y="355" width="334" height="115"/>
+                    <rect key="frame" x="41" y="355" width="238" height="115"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFc-DX-lry">
-                            <rect key="frame" x="0.0" y="0.0" width="334" height="2"/>
+                            <rect key="frame" x="0.0" y="0.0" width="238" height="2"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="2" id="IDF-rq-kES"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop Everywere" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycr-gJ-gdn">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycr-gJ-gdn">
                             <rect key="frame" x="0.0" y="38" width="177.33333333333334" height="23"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="23" id="Vxq-B9-FbD"/>
@@ -49,26 +49,28 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGH QUALITY MATERIAL EGYPTION FASHION ONLINE STORE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5B6-iw-mzD">
-                            <rect key="frame" x="0.0" y="81" width="326" height="34"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="5B6-iw-mzD">
+                            <rect key="frame" x="0.0" y="81" width="238" height="34"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="34" id="Oj7-Wk-C0w"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="tFc-DX-lry" secondAttribute="trailing" id="8CE-zL-QK1"/>
+                        <constraint firstAttribute="bottom" secondItem="5B6-iw-mzD" secondAttribute="bottom" id="XlZ-x8-ONA"/>
                         <constraint firstItem="tFc-DX-lry" firstAttribute="top" secondItem="zzE-Rn-uYU" secondAttribute="top" id="kAt-oS-E7D"/>
                         <constraint firstItem="tFc-DX-lry" firstAttribute="leading" secondItem="zzE-Rn-uYU" secondAttribute="leading" id="ob8-2R-KKy"/>
+                        <constraint firstAttribute="trailing" secondItem="5B6-iw-mzD" secondAttribute="trailing" id="uji-GZ-B7m"/>
                     </constraints>
                 </stackView>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="zzE-Rn-uYU" secondAttribute="trailing" id="0T7-5r-W8a"/>
+                <constraint firstAttribute="trailing" secondItem="zzE-Rn-uYU" secondAttribute="trailing" constant="96" id="0T7-5r-W8a"/>
                 <constraint firstItem="L4U-kK-5e9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5v2-hz-d6T"/>
                 <constraint firstItem="zzE-Rn-uYU" firstAttribute="top" secondItem="L4U-kK-5e9" secondAttribute="bottom" constant="40" id="Lnb-e5-v5P"/>
                 <constraint firstItem="zzE-Rn-uYU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="41" id="UgH-9b-RyQ"/>
@@ -86,7 +88,4 @@
             <point key="canvasLocation" x="48.550724637681164" y="43.206521739130437"/>
         </view>
     </objects>
-    <resources>
-        <image name="slide1" width="335" height="280"/>
-    </resources>
 </document>
