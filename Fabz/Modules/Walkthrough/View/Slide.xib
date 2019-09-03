@@ -24,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide1" translatesAutoresizingMaskIntoConstraints="NO" id="L4U-kK-5e9">
-                    <rect key="frame" x="0.0" y="30" width="375" height="285"/>
+                    <rect key="frame" x="0.0" y="30" width="335" height="285"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="285" id="FvD-ev-4y7"/>
                         <constraint firstAttribute="width" constant="335" id="ugk-pJ-Iyq"/>
@@ -72,7 +72,7 @@
                 <constraint firstItem="L4U-kK-5e9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5v2-hz-d6T"/>
                 <constraint firstItem="zzE-Rn-uYU" firstAttribute="top" secondItem="L4U-kK-5e9" secondAttribute="bottom" constant="40" id="Lnb-e5-v5P"/>
                 <constraint firstItem="zzE-Rn-uYU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="41" id="UgH-9b-RyQ"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="L4U-kK-5e9" secondAttribute="trailing" id="p1I-rA-vtS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="L4U-kK-5e9" secondAttribute="trailing" constant="40" id="p1I-rA-vtS"/>
                 <constraint firstItem="L4U-kK-5e9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="thc-X8-7Wf"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

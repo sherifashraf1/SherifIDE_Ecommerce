@@ -23,7 +23,7 @@ class WalkthroughViewController: UIViewController {
     
     var slides:[Slide] = []
     var i = 0
-    
+
     override func viewDidLayoutSubviews() {
         pageControl.subviews.forEach {
             $0.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
@@ -92,24 +92,15 @@ class WalkthroughViewController: UIViewController {
         return slide3
     }
     
-//    func createSlides(){
-//        createSlide1()
-//        createSlide2()
-//        createSlide3()
-//    }
-    
     
     func setupSlideScrollView(slides : [Slide]) {
-        scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
-        scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
         scrollView.isPagingEnabled = true
-        
         for i in 0 ..< slides.count {
-            slides[i].frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width, height: view.frame.height)
+            slides[i].frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width , height: view.frame.height)
             scrollView.addSubview(slides[i])
         }
+        scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
     }
-    
     
     @IBAction func skipBtn(_ sender: Any) {
         dismiss(animated: true, completion: nil)
