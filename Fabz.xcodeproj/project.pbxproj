@@ -14,6 +14,7 @@
 		39DB1F1322F7B200005697F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39DB1F1222F7B200005697F7 /* Assets.xcassets */; };
 		39DB1F1622F7B200005697F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DB1F1422F7B200005697F7 /* LaunchScreen.storyboard */; };
 		39DB1F2122F7B200005697F7 /* FabzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB1F2022F7B200005697F7 /* FabzTests.swift */; };
+		E008BA7323217BA8006B28C3 /* UITextField + PlaceholderColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E008BA7223217BA8006B28C3 /* UITextField + PlaceholderColor.swift */; };
 		E06CD3932319991400EA3282 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CD3912319991400EA3282 /* WalkthroughViewController.swift */; };
 		E06CD3942319991400EA3282 /* WalkthroughViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E06CD3922319991400EA3282 /* WalkthroughViewController.xib */; };
 		E06CD3972319D69200EA3282 /* CustomPageControl + PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CD3962319D69200EA3282 /* CustomPageControl + PageControl.swift */; };
@@ -51,6 +52,7 @@
 		39DB1F1C22F7B200005697F7 /* FabzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FabzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DB1F2022F7B200005697F7 /* FabzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabzTests.swift; sourceTree = "<group>"; };
 		39DB1F2222F7B200005697F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E008BA7223217BA8006B28C3 /* UITextField + PlaceholderColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + PlaceholderColor.swift"; sourceTree = "<group>"; };
 		E06CD3912319991400EA3282 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		E06CD3922319991400EA3282 /* WalkthroughViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkthroughViewController.xib; sourceTree = "<group>"; };
 		E06CD3962319D69200EA3282 /* CustomPageControl + PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomPageControl + PageControl.swift"; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 			children = (
 				E06CD3962319D69200EA3282 /* CustomPageControl + PageControl.swift */,
 				E0E30367231D9A0900663225 /* IDEColor + UIColor.swift */,
+				E008BA7223217BA8006B28C3 /* UITextField + PlaceholderColor.swift */,
 			);
 			path = Extenstions;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				E06CD39A2319EDD600EA3282 /* Slide.swift in Sources */,
 				E0C79916231492830020F595 /* SplashViewController.swift in Sources */,
 				E06CD3932319991400EA3282 /* WalkthroughViewController.swift in Sources */,
+				E008BA7323217BA8006B28C3 /* UITextField + PlaceholderColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

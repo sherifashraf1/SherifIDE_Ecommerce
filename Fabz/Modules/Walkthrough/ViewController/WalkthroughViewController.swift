@@ -31,7 +31,8 @@ class WalkthroughViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        slides = [createSlide1(),createSlide2(),createSlide3()]
+        slides = createSlide()
+        self.loadViewIfNeeded()
         setupSlideScrollView(slides: slides)
         pageIndicatorSetUp()
         pageControl.numberOfPages = slides.count
@@ -46,43 +47,41 @@ class WalkthroughViewController: UIViewController {
         pageControl.currentPageIndicatorTintColor = .white
     }
 
-    private func createSlide1()-> Slide{
+    private func createSlide()-> [Slide]{
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide1.slide1SubLineView.backgroundColor = UIColor.IDEColor
         slide1.lineView.addSubview(slide1.slide1SubLineView)
         slide1.imageView.image = UIImage(named: "slide1")
         slide1.imageTitle.text = "Shop Everywere"
         slide1.imageDescription.text = "High quality material egyption fashion online store".uppercased()
-        return slide1
-    }
-    
-    private func createSlide2()-> Slide{
+      
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide2.slide2SubLineView.backgroundColor = UIColor.IDEColor
         slide2.lineView.addSubview(slide2.slide2SubLineView)
-        slide2.imageView.image = UIImage(named: "slide2")
+        slide2.imageView.image = UIImage(named: "slide1")
         slide2.imageTitle.text = "Money Heist"
         slide2.imageDescription.text = "Je m’appelle Tokyo. Mais ce n’était pas mon nom quand toute.".uppercased()
-        return slide2
-    }
-    
-    private func createSlide3()-> Slide{
+       
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide3.slide3SubLineView.backgroundColor = UIColor.IDEColor
         slide3.lineView.addSubview(slide3.slide3SubLineView)
-        slide3.imageView.image = UIImage(named: "slide3")
+        slide3.imageView.image = UIImage(named: "slide1")
         slide3.imageTitle.text = "Nancy Ajram"
         slide3.imageDescription.text = "one of the most successful singers in the Arab world".uppercased()
-        return slide3
+        
+        return [slide1 , slide2 , slide3]
     }
+
 
     func setupSlideScrollView(slides : [Slide]) {
         scrollView.isPagingEnabled = true
         for i in 0 ..< slides.count {
             slides[i].frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width , height: view.frame.height)
+            scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
+
             scrollView.addSubview(slides[i])
+            self.loadViewIfNeeded()
         }
-        scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
     }
     
     fileprivate func autoPageSlideWithTimer() {
@@ -103,6 +102,11 @@ class WalkthroughViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func signUpBtn(_ sender: Any) {
+        let vc = AuthenticationViewController()
+        present(vc, animated: true, completion: nil)
+    }
+   
 }
 
 extension WalkthroughViewController : UIScrollViewDelegate {

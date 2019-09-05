@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,7 +19,6 @@
                 <outlet property="loginBtn" destination="PKS-02-RMO" id="gjj-wZ-6rE"/>
                 <outlet property="pageControl" destination="Vzc-CW-YDe" id="dVo-uz-lC3"/>
                 <outlet property="scrollView" destination="MS4-kS-GsE" id="RST-9P-wHy"/>
-                <outlet property="scrollViewLeading" destination="gQu-Ns-ma7" id="slE-1l-sSB"/>
                 <outlet property="scrollViewTrailiang" destination="kKx-MB-tyl" id="PjN-qC-taU"/>
                 <outlet property="signUpBtn" destination="PKS-02-RMO" id="kUW-5c-WTJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -33,6 +32,7 @@
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MS4-kS-GsE">
                     <rect key="frame" x="0.0" y="98" width="335" height="564"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="scrollIndicatorInsets" minX="40" minY="0.0" maxX="40" maxY="0.0"/>
                 </scrollView>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="226" translatesAutoresizingMaskIntoConstraints="NO" id="iXW-JM-1vh">
                     <rect key="frame" x="40" y="73" width="295" height="12"/>
@@ -73,6 +73,9 @@
                             <state key="normal" title="SIGNUP">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="signUpBtn:" destination="-1" eventType="touchUpInside" id="ohH-Xi-YCv"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKS-02-RMO" customClass="CustomBTN" customModule="Fabz" customModuleProvider="target">
                             <rect key="frame" x="157.66666666666663" y="0.0" width="137.33333333333337" height="50"/>
@@ -98,7 +101,6 @@
                 <constraint firstItem="MS4-kS-GsE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="98" id="a7b-lN-fIH"/>
                 <constraint firstItem="iXW-JM-1vh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="73" id="abj-l8-HhY"/>
                 <constraint firstItem="iXW-JM-1vh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="dLb-Yx-iRw"/>
-                <constraint firstItem="MS4-kS-GsE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gQu-Ns-ma7"/>
                 <constraint firstAttribute="bottom" secondItem="uC9-X6-QEv" secondAttribute="bottom" constant="40" id="i0x-ET-aqV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MS4-kS-GsE" secondAttribute="trailing" constant="40" id="kKx-MB-tyl"/>
                 <constraint firstAttribute="bottom" secondItem="MS4-kS-GsE" secondAttribute="bottom" constant="150" id="q2f-yo-SOz"/>
