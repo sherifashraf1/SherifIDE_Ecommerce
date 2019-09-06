@@ -16,8 +16,13 @@ class AuthenticationViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var userNameTxtField: UITextField!
     @IBOutlet weak var emailTxtField: UITextField!
-    
     @IBOutlet weak var passwordTxtField: UITextField!
+
+    @IBOutlet weak var userNameTxtFLine: UIView!
+    @IBOutlet weak var emailTxtFLine: UIView!
+    @IBOutlet weak var passwordTxtFLine: UIView!
+    @IBOutlet weak var userNameStackView: UIStackView!
+    
     fileprivate func addLineUnderAuthStackView() {
         let underAuthStackLineView = UIView(frame: CGRect(x: 40, y: 262, width: view.frame.width, height: 0.5))
          underAuthStackLineView.backgroundColor = UIColor(displayP3Red: 216/255, green: 216/255, blue: 216/255, alpha: 0.2)
@@ -30,32 +35,24 @@ class AuthenticationViewController: UIViewController {
         addLineUnderAuthStackView()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-//        let underUserNameLine = UIView(frame: CGRect(x: 45, y: 380, width: view.frame.width, height: 0.5))
-//        underUserNameLine.backgroundColor = UIColor(white: 1, alpha: 1)
-//        view.addSubview(underUserNameLine)
-//        
-//        let underEmailLine = UIView(frame: CGRect(x: 45, y: 460, width: view.frame.width, height: 0.5))
-//        underEmailLine.backgroundColor = UIColor(displayP3Red: 216/255, green: 216/255, blue: 216/255, alpha: 0.2)
-//        view.addSubview(underEmailLine)
-//        
-//        let underPasswordLine = UIView(frame: CGRect(x: 45, y: 530, width: view.frame.width, height: 0.5))
-//        underPasswordLine.backgroundColor = UIColor(displayP3Red: 216/255, green: 216/255, blue: 216/255, alpha: 0.2)
-//        view.addSubview(underPasswordLine)
-
-    }
-    
+ 
     private func configSignupBtn(){
         self.loginButton.isHighlighted = true
         self.loginButtomLine.backgroundColor = .clear
         self.signUpButttonLine.backgroundColor = .white
+        userNameStackView.isHidden = false
+        emailTxtField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor(white: 0.6, alpha: 0.4)])
+        emailTxtFLine.backgroundColor = UIColor(white: 0.6, alpha: 0.4)
+
     }
     private func configLoginBtn(){
         self.signUpButton.isHighlighted = true
         self.loginButtomLine.backgroundColor = .white
         self.signUpButttonLine.backgroundColor = .clear
+        userNameStackView.isHidden = true
+        emailTxtField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        emailTxtFLine.backgroundColor = .white
+        
         
     }
     @IBAction func signUpBtn(_ sender: Any) {

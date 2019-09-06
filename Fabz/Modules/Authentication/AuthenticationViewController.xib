@@ -16,12 +16,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthenticationViewController" customModule="Fabz" customModuleProvider="target">
             <connections>
-                <outlet property="emailTxtField" destination="Dr3-dt-9qx" id="qE0-Ac-m9g"/>
+                <outlet property="emailTxtFLine" destination="mwP-2k-jNx" id="Fm5-cQ-uoZ"/>
+                <outlet property="emailTxtField" destination="leW-fs-8lN" id="XgV-zH-ydM"/>
                 <outlet property="loginButtomLine" destination="V6l-km-UWV" id="LOt-xE-DtT"/>
                 <outlet property="loginButton" destination="J2s-IH-4QY" id="WBU-CQ-Qib"/>
-                <outlet property="passwordTxtField" destination="BkF-ky-krQ" id="ZJR-8l-fnU"/>
+                <outlet property="passwordTxtFLine" destination="2CT-XM-7x8" id="26S-Ht-lzw"/>
+                <outlet property="passwordTxtField" destination="u6Q-IY-Agu" id="iwl-rS-gcz"/>
                 <outlet property="signUpButton" destination="NAh-dK-fiH" id="bvD-u6-bDk"/>
                 <outlet property="signUpButttonLine" destination="Hx4-II-sKA" id="Ewd-1z-Nbw"/>
+                <outlet property="userNameStackView" destination="f7S-4i-Ofa" id="noH-TT-9ba"/>
+                <outlet property="userNameTxtFLine" destination="sMB-yf-kVZ" id="E9d-qN-rm2"/>
                 <outlet property="userNameTxtField" destination="NrN-nK-ghJ" id="ceo-ko-aXg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -103,54 +107,90 @@
                         </stackView>
                     </subviews>
                 </stackView>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="nTU-gu-ccF">
-                    <rect key="frame" x="40" y="348" width="335" height="180"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-Pl-Rse">
+                    <rect key="frame" x="40" y="348" width="335" height="179"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NrN-nK-ghJ">
-                            <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="f7S-4i-Ofa">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="31"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NrN-nK-ghJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="20"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="JFFlat-Regular" family="JF Flat" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMB-yf-kVZ">
+                                    <rect key="frame" x="0.0" y="30" width="335" height="1"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="U1V-po-mFv"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
                             <constraints>
-                                <constraint firstAttribute="height" constant="30" id="cyX-Tn-Wzw"/>
+                                <constraint firstAttribute="height" constant="31" id="aSj-vB-4IZ"/>
                             </constraints>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
-                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dr3-dt-9qx">
-                            <rect key="frame" x="0.0" y="75" width="335" height="30"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nzK-bq-pm1">
+                            <rect key="frame" x="0.0" y="74" width="335" height="31"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="leW-fs-8lN">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="20"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="JFFlat-Regular" family="JF Flat" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                            <color key="value" white="1" alpha="0.40151434075342468" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwP-2k-jNx">
+                                    <rect key="frame" x="0.0" y="30" width="335" height="1"/>
+                                    <color key="backgroundColor" white="1" alpha="0.20440924657534246" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="IGp-ia-725"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
                             <constraints>
-                                <constraint firstAttribute="height" constant="30" id="29M-ZB-hqo"/>
+                                <constraint firstAttribute="height" constant="31" id="jc0-Q5-DlA"/>
                             </constraints>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
-                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BkF-ky-krQ">
-                            <rect key="frame" x="0.0" y="150" width="335" height="30"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EEs-IJ-EMG">
+                            <rect key="frame" x="0.0" y="148" width="335" height="31"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u6Q-IY-Agu">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="20"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="JFFlat-Regular" family="JF Flat" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                            <color key="value" white="1" alpha="0.4022902397260274" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2CT-XM-7x8">
+                                    <rect key="frame" x="0.0" y="30" width="335" height="1"/>
+                                    <color key="backgroundColor" white="1" alpha="0.2049443493150685" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="FjG-ir-ylq"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
                             <constraints>
-                                <constraint firstAttribute="height" constant="30" id="GGK-I5-xfL"/>
+                                <constraint firstAttribute="height" constant="31" id="QZF-fS-7iM"/>
                             </constraints>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
-                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </textField>
+                        </stackView>
                     </subviews>
                 </stackView>
             </subviews>
@@ -159,10 +199,10 @@
                 <constraint firstItem="Q1k-dw-whq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="41" id="6Gr-Oi-DJe"/>
                 <constraint firstItem="Q1k-dw-whq" firstAttribute="top" secondItem="T5O-wi-6Ca" secondAttribute="bottom" constant="79" id="8NO-CT-cGm"/>
                 <constraint firstItem="T5O-wi-6Ca" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="9Sh-TX-ZI2"/>
-                <constraint firstItem="nTU-gu-ccF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="M7m-FM-nvo"/>
+                <constraint firstItem="0fc-Pl-Rse" firstAttribute="top" secondItem="Q1k-dw-whq" secondAttribute="bottom" constant="85" id="TSn-3Q-Nrh"/>
                 <constraint firstItem="T5O-wi-6Ca" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="fq1-WX-qyz"/>
-                <constraint firstItem="nTU-gu-ccF" firstAttribute="top" secondItem="Q1k-dw-whq" secondAttribute="bottom" constant="85" id="scU-aN-GO9"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nTU-gu-ccF" secondAttribute="trailing" id="wWA-1o-X5O"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0fc-Pl-Rse" secondAttribute="trailing" id="oEx-BV-NXh"/>
+                <constraint firstItem="0fc-Pl-Rse" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="yuy-1y-eb6"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
