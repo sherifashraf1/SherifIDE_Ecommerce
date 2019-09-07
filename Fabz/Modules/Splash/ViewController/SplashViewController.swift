@@ -22,6 +22,5 @@ class SplashViewController: UIViewController {
         present(vc, animated: true, completion: nil)
         
     }
-    
 
 }

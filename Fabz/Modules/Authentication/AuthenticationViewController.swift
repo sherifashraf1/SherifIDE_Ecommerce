@@ -36,7 +36,7 @@ class AuthenticationViewController: UIViewController {
     
     
     fileprivate func addLineUnderAuthStackView() {
-        let underAuthStackLineView = UIView(frame: CGRect(x: 40, y: 262, width: view.frame.width, height: 0.5))
+        let underAuthStackLineView = UIView(frame: CGRect(x: 40, y: 222, width: view.frame.width, height: 0.5))
         underAuthStackLineView.backgroundColor = UIColor(displayP3Red: 216/255, green: 216/255, blue: 216/255, alpha: 0.2)
         view.addSubview(underAuthStackLineView)
     }
@@ -93,46 +93,47 @@ class AuthenticationViewController: UIViewController {
     
     
     private func configSignupBtn(){
-        self.loginButton.isHighlighted = true
-        self.loginButtomLine.backgroundColor = .clear
-        self.signUpButttonLine.backgroundColor = .white
+        loginButton.isHighlighted = true
+        loginButtomLine.backgroundColor = .clear
+        signUpButttonLine.backgroundColor = .white
         userNameStackView.isHidden = false
         agreeWithTermsStackView.isHidden = false
         faceBookBtn.isHidden = false
         signUpBtn.setTitle("SIGNUP", for: .normal)
-        sigbUpBtnButtomConstant.constant -= 54
-
+        sigbUpBtnButtomConstant.constant -= 60
         forgetPasswordBtn.isHidden = true
-
+        
         emailTxtField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor(white: 0.6, alpha: 0.4)])
         emailTxtFLine.backgroundColor = UIColor(white: 0.6, alpha: 0.4)
         
     }
     private func configLoginBtn(){
-        self.signUpButton.isHighlighted = true
-        self.loginButtomLine.backgroundColor = .white
-        self.signUpButttonLine.backgroundColor = .clear
+        signUpButton.isHighlighted = true
+        loginButtomLine.backgroundColor = .white
+        signUpButttonLine.backgroundColor = .clear
         userNameStackView.isHidden = true
         agreeWithTermsStackView.isHidden = true
-       
         faceBookBtn.isHidden = true
         signUpBtn.setTitle("LOGIN", for: .normal)
-        sigbUpBtnButtomConstant.constant += 54
-        
+        sigbUpBtnButtomConstant.constant += 60
+
         forgetPasswordBtn.isHidden = false
-    emailTxtField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        emailTxtField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         emailTxtFLine.backgroundColor = .white
         
         
     }
     @IBAction func signUpBtn(_ sender: Any) {
+        loginButton.isEnabled = true
         configSignupBtn()
+        signUpButton.isEnabled = false
     }
     
     @IBAction func loginBtn(_ sender: Any) {
+        signUpButton.isEnabled = true
         configLoginBtn()
+        loginButton.isEnabled = false
     }
-    
     
     @IBAction func checkBoxBtn(_ sender: UIButton) {
         sender.setImage(UIImage(named: "checked"), for: .normal)
@@ -140,7 +141,7 @@ class AuthenticationViewController: UIViewController {
         sender.isSelected = !sender.isSelected
         if !sender.isSelected {
             sender.setImage(UIImage(named: "unchecked"), for: .normal)
-
+            
         }
     }
     

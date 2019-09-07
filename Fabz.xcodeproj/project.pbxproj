@@ -15,12 +15,10 @@
 		39DB1F1622F7B200005697F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DB1F1422F7B200005697F7 /* LaunchScreen.storyboard */; };
 		39DB1F2122F7B200005697F7 /* FabzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB1F2022F7B200005697F7 /* FabzTests.swift */; };
 		E008BA7323217BA8006B28C3 /* UITextField + PlaceholderColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E008BA7223217BA8006B28C3 /* UITextField + PlaceholderColor.swift */; };
-		E06CD3932319991400EA3282 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CD3912319991400EA3282 /* WalkthroughViewController.swift */; };
-		E06CD3942319991400EA3282 /* WalkthroughViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E06CD3922319991400EA3282 /* WalkthroughViewController.xib */; };
+		E04E76D1232345D400D744C8 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E04E76D0232345D400D744C8 /* Media.xcassets */; };
+		E05CC863232312DD007D2D47 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05CC861232312DD007D2D47 /* WalkthroughViewController.swift */; };
+		E05CC864232312DD007D2D47 /* WalkthroughViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E05CC862232312DD007D2D47 /* WalkthroughViewController.xib */; };
 		E06CD3972319D69200EA3282 /* CustomPageControl + PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CD3962319D69200EA3282 /* CustomPageControl + PageControl.swift */; };
-		E06CD39A2319EDD600EA3282 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CD3992319EDD600EA3282 /* Slide.swift */; };
-		E06CD39C2319EDFD00EA3282 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = E06CD39B2319EDFD00EA3282 /* Slide.xib */; };
-		E06CD3A02319F39300EA3282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E06CD39F2319F39300EA3282 /* Assets.xcassets */; };
 		E0C79915231492830020F595 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0C79913231492830020F595 /* SplashViewController.xib */; };
 		E0C79916231492830020F595 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C79914231492830020F595 /* SplashViewController.swift */; };
 		E0C79918231492960020F595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0C79917231492960020F595 /* Assets.xcassets */; };
@@ -53,12 +51,10 @@
 		39DB1F2022F7B200005697F7 /* FabzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabzTests.swift; sourceTree = "<group>"; };
 		39DB1F2222F7B200005697F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E008BA7223217BA8006B28C3 /* UITextField + PlaceholderColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + PlaceholderColor.swift"; sourceTree = "<group>"; };
-		E06CD3912319991400EA3282 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
-		E06CD3922319991400EA3282 /* WalkthroughViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkthroughViewController.xib; sourceTree = "<group>"; };
+		E04E76D0232345D400D744C8 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		E05CC861232312DD007D2D47 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		E05CC862232312DD007D2D47 /* WalkthroughViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkthroughViewController.xib; sourceTree = "<group>"; };
 		E06CD3962319D69200EA3282 /* CustomPageControl + PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomPageControl + PageControl.swift"; sourceTree = "<group>"; };
-		E06CD3992319EDD600EA3282 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
-		E06CD39B2319EDFD00EA3282 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
-		E06CD39F2319F39300EA3282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0C79913231492830020F595 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		E0C79914231492830020F595 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E0C79917231492960020F595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,32 +129,14 @@
 			path = FabzTests;
 			sourceTree = "<group>";
 		};
-		E06CD390231998EC00EA3282 /* Walkthrough */ = {
+		E05CC860232312B0007D2D47 /* Walkthrough */ = {
 			isa = PBXGroup;
 			children = (
-				E06CD3982319EDBA00EA3282 /* View */,
-				E06CD39E2319EE1400EA3282 /* ViewController */,
-				E06CD39F2319F39300EA3282 /* Assets.xcassets */,
+				E05CC861232312DD007D2D47 /* WalkthroughViewController.swift */,
+				E05CC862232312DD007D2D47 /* WalkthroughViewController.xib */,
+				E04E76D0232345D400D744C8 /* Media.xcassets */,
 			);
 			path = Walkthrough;
-			sourceTree = "<group>";
-		};
-		E06CD3982319EDBA00EA3282 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				E06CD3992319EDD600EA3282 /* Slide.swift */,
-				E06CD39B2319EDFD00EA3282 /* Slide.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		E06CD39E2319EE1400EA3282 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E06CD3912319991400EA3282 /* WalkthroughViewController.swift */,
-				E06CD3922319991400EA3282 /* WalkthroughViewController.xib */,
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		E0C7990E231491F40020F595 /* Assets */ = {
@@ -183,8 +161,8 @@
 		E0C79910231492290020F595 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E05CC860232312B0007D2D47 /* Walkthrough */,
 				E0C79911231492360020F595 /* Splash */,
-				E06CD390231998EC00EA3282 /* Walkthrough */,
 				180246A223156FF400441D74 /* Authentication */,
 			);
 			path = Modules;
@@ -326,16 +304,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E04E76D1232345D400D744C8 /* Media.xcassets in Resources */,
 				180246AA231582C100441D74 /* AuthenticationViewController.xib in Resources */,
 				E0C7991E231492D70020F595 /* MyriadPro-Regular.otf in Resources */,
-				E06CD3A02319F39300EA3282 /* Assets.xcassets in Resources */,
 				180246AC2315856900441D74 /* Media.xcassets in Resources */,
 				39DB1F1622F7B200005697F7 /* LaunchScreen.storyboard in Resources */,
 				E0C79915231492830020F595 /* SplashViewController.xib in Resources */,
-				E06CD39C2319EDFD00EA3282 /* Slide.xib in Resources */,
 				E0C79918231492960020F595 /* Assets.xcassets in Resources */,
 				39DB1F1322F7B200005697F7 /* Assets.xcassets in Resources */,
-				E06CD3942319991400EA3282 /* WalkthroughViewController.xib in Resources */,
+				E05CC864232312DD007D2D47 /* WalkthroughViewController.xib in Resources */,
 				E0C7991D231492D70020F595 /* JF Flat Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,13 +332,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0C799282314981C0020F595 /* CustomBTN.swift in Sources */,
+				E05CC863232312DD007D2D47 /* WalkthroughViewController.swift in Sources */,
 				39DB1F0C22F7B1FF005697F7 /* AppDelegate.swift in Sources */,
 				180246A9231582C100441D74 /* AuthenticationViewController.swift in Sources */,
 				E06CD3972319D69200EA3282 /* CustomPageControl + PageControl.swift in Sources */,
 				E0E30368231D9A0900663225 /* IDEColor + UIColor.swift in Sources */,
-				E06CD39A2319EDD600EA3282 /* Slide.swift in Sources */,
 				E0C79916231492830020F595 /* SplashViewController.swift in Sources */,
-				E06CD3932319991400EA3282 /* WalkthroughViewController.swift in Sources */,
 				E008BA7323217BA8006B28C3 /* UITextField + PlaceholderColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,14 +28,30 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.65000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="Wn7-wK-J5W">
-                    <rect key="frame" x="62.5" y="472" width="250.5" height="48"/>
-                    <string key="text">F A B Z  FASHION ONLINE
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="EwV-Sn-L00">
+                    <rect key="frame" x="72.5" y="170" width="230" height="248"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="fabzLogo" translatesAutoresizingMaskIntoConstraints="NO" id="IfU-Oi-YH5">
+                            <rect key="frame" x="30" y="0.0" width="170" height="170"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="170" id="1cQ-kU-4Ft"/>
+                                <constraint firstAttribute="width" constant="170" id="U5n-GW-mhB"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.65000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="Wn7-wK-J5W">
+                            <rect key="frame" x="0.0" y="208" width="230" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="230" id="GLM-el-cBX"/>
+                                <constraint firstAttribute="height" constant="40" id="ioM-Wd-amQ"/>
+                            </constraints>
+                            <string key="text">F A B Z  FASHION ONLINE
   WOMEN FASHION APP</string>
-                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="24"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMc-Ow-JfJ" customClass="CustomBTN" customModule="Fabz" customModuleProvider="target">
                     <rect key="frame" x="40" y="722" width="295" height="50"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -50,20 +66,14 @@
                         <action selector="getStartedBtn:" destination="-1" eventType="touchUpInside" id="WKJ-hu-U4l"/>
                     </connections>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fabzLogo" translatesAutoresizingMaskIntoConstraints="NO" id="IfU-Oi-YH5">
-                    <rect key="frame" x="87" y="213" width="201" height="221"/>
-                </imageView>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             <constraints>
-                <constraint firstItem="Wn7-wK-J5W" firstAttribute="top" secondItem="IfU-Oi-YH5" secondAttribute="bottom" constant="38" id="HB7-hj-yrd"/>
+                <constraint firstItem="EwV-Sn-L00" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="DZz-JE-qss"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="SMc-Ow-JfJ" secondAttribute="bottom" constant="40" id="IwV-wq-tH7"/>
-                <constraint firstItem="IfU-Oi-YH5" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="201:812" id="KeJ-bD-VrN"/>
-                <constraint firstItem="IfU-Oi-YH5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="193" id="UoR-ww-cSB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SMc-Ow-JfJ" secondAttribute="trailing" constant="40" id="dpV-7F-Q5E"/>
-                <constraint firstItem="IfU-Oi-YH5" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="fnw-ZC-Ymy"/>
+                <constraint firstItem="EwV-Sn-L00" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ikT-Ji-Gu1"/>
                 <constraint firstItem="SMc-Ow-JfJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="sjv-a5-gzC"/>
-                <constraint firstItem="Wn7-wK-J5W" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="usg-RI-Kb0"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
