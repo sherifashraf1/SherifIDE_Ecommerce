@@ -18,7 +18,7 @@ class SplashViewController: UIViewController {
     
     @IBAction func getStartedBtn(_ sender: Any) {
         
-        let vc = WalkthroughViewController()
+        let vc = AuthenticationViewController()
         present(vc, animated: true, completion: nil)
         
     }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -29,20 +29,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="EwV-Sn-L00">
-                    <rect key="frame" x="72.5" y="170" width="230" height="248"/>
+                    <rect key="frame" x="22" y="150" width="331" height="309"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="fabzLogo" translatesAutoresizingMaskIntoConstraints="NO" id="IfU-Oi-YH5">
-                            <rect key="frame" x="30" y="0.0" width="170" height="170"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="170" id="1cQ-kU-4Ft"/>
-                                <constraint firstAttribute="width" constant="170" id="U5n-GW-mhB"/>
-                            </constraints>
+                            <rect key="frame" x="65" y="0.0" width="201" height="221"/>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.65000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="Wn7-wK-J5W">
-                            <rect key="frame" x="0.0" y="208" width="230" height="40"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wn7-wK-J5W">
+                            <rect key="frame" x="0.0" y="259" width="331" height="50"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="230" id="GLM-el-cBX"/>
-                                <constraint firstAttribute="height" constant="40" id="ioM-Wd-amQ"/>
+                                <constraint firstAttribute="height" constant="50" id="Hkw-He-Lds"/>
                             </constraints>
                             <string key="text">F A B Z  FASHION ONLINE
   WOMEN FASHION APP</string>
@@ -51,9 +46,16 @@
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
+                    <constraints>
+                        <constraint firstItem="IfU-Oi-YH5" firstAttribute="top" secondItem="EwV-Sn-L00" secondAttribute="top" id="2Zq-VJ-8xA"/>
+                        <constraint firstItem="Wn7-wK-J5W" firstAttribute="leading" secondItem="EwV-Sn-L00" secondAttribute="leading" id="4IK-Li-8CR"/>
+                        <constraint firstAttribute="bottom" secondItem="Wn7-wK-J5W" secondAttribute="bottom" id="6uc-F8-Gjw"/>
+                        <constraint firstAttribute="trailing" secondItem="IfU-Oi-YH5" secondAttribute="trailing" constant="65" id="Hbg-a9-uNI"/>
+                        <constraint firstItem="Wn7-wK-J5W" firstAttribute="top" secondItem="IfU-Oi-YH5" secondAttribute="bottom" constant="38" id="qXf-di-3Qd"/>
+                    </constraints>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMc-Ow-JfJ" customClass="CustomBTN" customModule="Fabz" customModuleProvider="target">
-                    <rect key="frame" x="40" y="722" width="295" height="50"/>
+                    <rect key="frame" x="40" y="742" width="295" height="50"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Xhs-v6-Zb4"/>
@@ -69,15 +71,18 @@
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             <constraints>
-                <constraint firstItem="EwV-Sn-L00" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="DZz-JE-qss"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="SMc-Ow-JfJ" secondAttribute="bottom" constant="40" id="IwV-wq-tH7"/>
+                <constraint firstItem="EwV-Sn-L00" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="130" id="DZz-JE-qss"/>
+                <constraint firstAttribute="bottom" secondItem="SMc-Ow-JfJ" secondAttribute="bottom" constant="20" id="IwV-wq-tH7"/>
+                <constraint firstItem="EwV-Sn-L00" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SMc-Ow-JfJ" secondAttribute="top" multiplier="0.4" constant="-265" id="d1S-xM-yLI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SMc-Ow-JfJ" secondAttribute="trailing" constant="40" id="dpV-7F-Q5E"/>
                 <constraint firstItem="EwV-Sn-L00" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ikT-Ji-Gu1"/>
+                <constraint firstItem="IfU-Oi-YH5" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="nEw-yn-NQC"/>
+                <constraint firstItem="EwV-Sn-L00" firstAttribute="height" relation="lessThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.4" id="oOM-1C-lUS"/>
                 <constraint firstItem="SMc-Ow-JfJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="sjv-a5-gzC"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="271" y="238"/>
+            <point key="canvasLocation" x="270.95070422535213" y="236.25"/>
         </view>
     </objects>
     <resources>
