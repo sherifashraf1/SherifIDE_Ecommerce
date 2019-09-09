@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,43 +19,41 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="Fabz" customModuleProvider="target">
             <connections>
-                <outlet property="getStartedButton" destination="SMc-Ow-JfJ" id="HjC-rX-E9p"/>
+                <outlet property="getStartedBtn" destination="SMc-Ow-JfJ" id="n3S-dn-gdZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="EwV-Sn-L00">
-                    <rect key="frame" x="22" y="150" width="331" height="309"/>
-                    <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="fabzLogo" translatesAutoresizingMaskIntoConstraints="NO" id="IfU-Oi-YH5">
-                            <rect key="frame" x="65" y="0.0" width="201" height="221"/>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wn7-wK-J5W">
-                            <rect key="frame" x="0.0" y="259" width="331" height="50"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="50" id="Hkw-He-Lds"/>
-                            </constraints>
-                            <string key="text">F A B Z  FASHION ONLINE
-  WOMEN FASHION APP</string>
-                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="24"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="fabzLogo" translatesAutoresizingMaskIntoConstraints="NO" id="IfU-Oi-YH5">
+                    <rect key="frame" x="59.5" y="120" width="201" height="221"/>
                     <constraints>
-                        <constraint firstItem="IfU-Oi-YH5" firstAttribute="top" secondItem="EwV-Sn-L00" secondAttribute="top" id="2Zq-VJ-8xA"/>
-                        <constraint firstItem="Wn7-wK-J5W" firstAttribute="leading" secondItem="EwV-Sn-L00" secondAttribute="leading" id="4IK-Li-8CR"/>
-                        <constraint firstAttribute="bottom" secondItem="Wn7-wK-J5W" secondAttribute="bottom" id="6uc-F8-Gjw"/>
-                        <constraint firstAttribute="trailing" secondItem="IfU-Oi-YH5" secondAttribute="trailing" constant="65" id="Hbg-a9-uNI"/>
-                        <constraint firstItem="Wn7-wK-J5W" firstAttribute="top" secondItem="IfU-Oi-YH5" secondAttribute="bottom" constant="38" id="qXf-di-3Qd"/>
+                        <constraint firstAttribute="height" constant="200" id="Evs-bf-sVj"/>
+                        <constraint firstAttribute="width" secondItem="IfU-Oi-YH5" secondAttribute="height" multiplier="0.9" id="dwR-Pr-gOu"/>
+                        <constraint firstAttribute="width" constant="200" id="vyN-Lb-ZIl">
+                            <variation key="heightClass=compact" constant="200"/>
+                        </constraint>
                     </constraints>
-                </stackView>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Evs-bf-sVj"/>
+                            <exclude reference="dwR-Pr-gOu"/>
+                            <exclude reference="vyN-Lb-ZIl"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <include reference="Evs-bf-sVj"/>
+                            <exclude reference="dwR-Pr-gOu"/>
+                            <include reference="vyN-Lb-ZIl"/>
+                        </mask>
+                    </variation>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMc-Ow-JfJ" customClass="CustomBTN" customModule="Fabz" customModuleProvider="target">
-                    <rect key="frame" x="40" y="742" width="295" height="50"/>
+                    <rect key="frame" x="40" y="498" width="240" height="50"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Xhs-v6-Zb4"/>
@@ -65,24 +63,87 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="getStartedBtn:" destination="-1" eventType="touchUpInside" id="WKJ-hu-U4l"/>
+                        <action selector="didPressOnGetStartedBtn:" destination="-1" eventType="touchUpInside" id="uuq-Ad-aav"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Wn7-wK-J5W">
+                    <rect key="frame" x="22" y="371" width="276" height="44"/>
+                    <string key="text">F A B Z  FASHION ONLINE
+  WOMEN FASHION APP</string>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="widthClass=compact">
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="22"/>
+                    </variation>
+                </label>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             <constraints>
-                <constraint firstItem="EwV-Sn-L00" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="130" id="DZz-JE-qss"/>
+                <constraint firstItem="IfU-Oi-YH5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="0Hb-Gx-4SX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Wn7-wK-J5W" secondAttribute="trailing" constant="22" id="BCd-Ob-8Xn"/>
+                <constraint firstItem="IfU-Oi-YH5" firstAttribute="bottom" secondItem="Wn7-wK-J5W" secondAttribute="top" constant="30" id="CZh-wX-wLA">
+                    <variation key="heightClass=regular" constant="-30"/>
+                </constraint>
+                <constraint firstItem="Wn7-wK-J5W" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="80" id="EW6-8J-VmK">
+                    <variation key="heightClass=compact" constant="100"/>
+                </constraint>
+                <constraint firstItem="IfU-Oi-YH5" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="IQh-gK-2BN"/>
+                <constraint firstItem="SMc-Ow-JfJ" firstAttribute="trailing" secondItem="Wn7-wK-J5W" secondAttribute="trailing" id="IYK-EW-ghM"/>
                 <constraint firstAttribute="bottom" secondItem="SMc-Ow-JfJ" secondAttribute="bottom" constant="20" id="IwV-wq-tH7"/>
-                <constraint firstItem="EwV-Sn-L00" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SMc-Ow-JfJ" secondAttribute="top" multiplier="0.4" constant="-265" id="d1S-xM-yLI"/>
+                <constraint firstItem="Wn7-wK-J5W" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="LkS-Q2-jj4"/>
+                <constraint firstItem="Wn7-wK-J5W" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="136" id="OK8-4z-dYf"/>
+                <constraint firstItem="Wn7-wK-J5W" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="Uxu-zo-lg7"/>
+                <constraint firstItem="IfU-Oi-YH5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="cps-az-Zgf"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SMc-Ow-JfJ" secondAttribute="trailing" constant="40" id="dpV-7F-Q5E"/>
-                <constraint firstItem="EwV-Sn-L00" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ikT-Ji-Gu1"/>
-                <constraint firstItem="IfU-Oi-YH5" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="nEw-yn-NQC"/>
-                <constraint firstItem="EwV-Sn-L00" firstAttribute="height" relation="lessThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.4" id="oOM-1C-lUS"/>
+                <constraint firstItem="IfU-Oi-YH5" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="fKd-dL-fYl"/>
+                <constraint firstItem="IfU-Oi-YH5" firstAttribute="width" relation="lessThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="gbV-ef-bpa"/>
+                <constraint firstItem="IfU-Oi-YH5" firstAttribute="height" relation="lessThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.4" id="hGD-5e-Wng"/>
                 <constraint firstItem="SMc-Ow-JfJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="sjv-a5-gzC"/>
+                <constraint firstItem="SMc-Ow-JfJ" firstAttribute="leading" secondItem="Wn7-wK-J5W" secondAttribute="leading" id="tpo-eb-l5R"/>
+                <constraint firstItem="SMc-Ow-JfJ" firstAttribute="leading" secondItem="IfU-Oi-YH5" secondAttribute="trailing" constant="193" id="z8U-YW-EgO"/>
             </constraints>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="270.95070422535213" y="236.25"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="IQh-gK-2BN"/>
+                    <exclude reference="cps-az-Zgf"/>
+                    <exclude reference="gbV-ef-bpa"/>
+                    <exclude reference="hGD-5e-Wng"/>
+                    <exclude reference="EW6-8J-VmK"/>
+                    <exclude reference="LkS-Q2-jj4"/>
+                    <exclude reference="OK8-4z-dYf"/>
+                    <exclude reference="IYK-EW-ghM"/>
+                    <exclude reference="tpo-eb-l5R"/>
+                    <exclude reference="z8U-YW-EgO"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact">
+                <mask key="constraints">
+                    <exclude reference="BCd-Ob-8Xn"/>
+                    <exclude reference="dpV-7F-Q5E"/>
+                    <exclude reference="0Hb-Gx-4SX"/>
+                    <exclude reference="CZh-wX-wLA"/>
+                    <include reference="IQh-gK-2BN"/>
+                    <include reference="cps-az-Zgf"/>
+                    <exclude reference="fKd-dL-fYl"/>
+                    <include reference="gbV-ef-bpa"/>
+                    <include reference="EW6-8J-VmK"/>
+                    <include reference="LkS-Q2-jj4"/>
+                    <exclude reference="OK8-4z-dYf"/>
+                    <exclude reference="Uxu-zo-lg7"/>
+                    <include reference="IYK-EW-ghM"/>
+                    <exclude reference="sjv-a5-gzC"/>
+                    <include reference="tpo-eb-l5R"/>
+                    <exclude reference="z8U-YW-EgO"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular">
+                <mask key="constraints">
+                    <include reference="hGD-5e-Wng"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="270.42253521126759" y="236.25"/>
         </view>
     </objects>
     <resources>

@@ -9,18 +9,21 @@
 import UIKit
 
 class SplashViewController: UIViewController {
+    @IBOutlet weak var getStartedBtn: CustomBTN!
+    
 
-    @IBOutlet weak var getStartedButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
   
     }
     
-    @IBAction func getStartedBtn(_ sender: Any) {
-        
+    @IBAction func didPressOnGetStartedBtn(_ sender: Any) {
         let vc = AuthenticationViewController()
         present(vc, animated: true, completion: nil)
-        
     }
+    
 
 }
+
+
+
