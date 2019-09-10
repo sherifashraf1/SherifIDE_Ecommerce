@@ -32,15 +32,13 @@ class AuthenticationViewController: UIViewController {
     
     @IBOutlet weak var sigbUpBtnButtomConstant: NSLayoutConstraint!
     
+    @IBOutlet weak var signUbBtnLandScapeButtomConstant: NSLayoutConstraint!
+    
+    @IBOutlet weak var signUpBtnLandScapeLeadingConstant: NSLayoutConstraint!
+    
     @IBOutlet weak var forgetPasswordBtn: UIButton!
     
-    
-    fileprivate func addLineUnderAuthStackView() {
-        let underAuthStackLineView = UIView(frame: CGRect(x: 40, y: 222, width: view.frame.width, height: 0.5))
-        underAuthStackLineView.backgroundColor = UIColor(displayP3Red: 216/255, green: 216/255, blue: 216/255, alpha: 0.2)
-        view.addSubview(underAuthStackLineView)
-    }
-    
+
     fileprivate func addIconsToTextFields() {
         let imageView1 = UIImageView(frame: CGRect(x: 0, y: 8, width: 20, height: 20))
         let userNameIcon = UIImage(named: "username-icon")
@@ -82,10 +80,10 @@ class AuthenticationViewController: UIViewController {
         passwordTxtField.leftView = view3
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         signUpButttonLine.backgroundColor = .white
-        addLineUnderAuthStackView()
         addIconsToTextFields()
         checkBoxBtn.layer.cornerRadius = 5
         
@@ -101,6 +99,10 @@ class AuthenticationViewController: UIViewController {
         faceBookBtn.isHidden = false
         signUpBtn.setTitle("SIGNUP", for: .normal)
         sigbUpBtnButtomConstant.constant -= 60
+        signUbBtnLandScapeButtomConstant.constant -= 60
+        signUpBtnLandScapeLeadingConstant.constant -= 200
+
+
         forgetPasswordBtn.isHidden = true
         
         emailTxtField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor(white: 0.6, alpha: 0.4)])
@@ -116,6 +118,10 @@ class AuthenticationViewController: UIViewController {
         faceBookBtn.isHidden = true
         signUpBtn.setTitle("LOGIN", for: .normal)
         sigbUpBtnButtomConstant.constant += 60
+        signUbBtnLandScapeButtomConstant.constant += 60
+        signUpBtnLandScapeLeadingConstant.constant += 200
+
+
 
         forgetPasswordBtn.isHidden = false
         emailTxtField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
@@ -146,3 +152,5 @@ class AuthenticationViewController: UIViewController {
     }
     
 }
+
+
