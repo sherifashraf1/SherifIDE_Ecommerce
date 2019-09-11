@@ -29,14 +29,26 @@ class WalkthroughViewController: UIViewController {
         pageIndicatorSetUp()
         pageControl.numberOfPages = 3
         pageControl.currentPage = 0
-        //view.bringSubviewToFront(pageControl)
     }
     
     
-    @IBAction func skipBtn(_ sender: Any) {
+    @IBAction func onClickSkipBtn(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func onClickSignUpBtn(_ sender: Any) {
+        let vc = AuthenticationViewController()
+        present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickLoginBtn(_ sender: Any) {
+        let vc = AuthenticationViewController()
+        present(vc, animated: true, completion: nil)
+    }
+    
+    
+    
     
     
 }

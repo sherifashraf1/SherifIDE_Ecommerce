@@ -26,6 +26,8 @@
 		E0C7991E231492D70020F595 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E0C7991C231492D70020F595 /* MyriadPro-Regular.otf */; };
 		E0C799282314981C0020F595 /* CustomBTN.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C799272314981C0020F595 /* CustomBTN.swift */; };
 		E0E30368231D9A0900663225 /* IDEColor + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E30367231D9A0900663225 /* IDEColor + UIColor.swift */; };
+		E0F4629023286E160032B436 /* SlideShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4628E23286E160032B436 /* SlideShowCell.swift */; };
+		E0F4629123286E160032B436 /* SlideShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F4628F23286E160032B436 /* SlideShowCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		E0C7991C231492D70020F595 /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
 		E0C799272314981C0020F595 /* CustomBTN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBTN.swift; sourceTree = "<group>"; };
 		E0E30367231D9A0900663225 /* IDEColor + UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDEColor + UIColor.swift"; sourceTree = "<group>"; };
+		E0F4628E23286E160032B436 /* SlideShowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideShowCell.swift; sourceTree = "<group>"; };
+		E0F4628F23286E160032B436 /* SlideShowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideShowCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,11 +133,21 @@
 			path = FabzTests;
 			sourceTree = "<group>";
 		};
+		E017363423287FFD0098BFD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0F4628E23286E160032B436 /* SlideShowCell.swift */,
+				E0F4628F23286E160032B436 /* SlideShowCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E05CC860232312B0007D2D47 /* Walkthrough */ = {
 			isa = PBXGroup;
 			children = (
 				E05CC861232312DD007D2D47 /* WalkthroughViewController.swift */,
 				E05CC862232312DD007D2D47 /* WalkthroughViewController.xib */,
+				E017363423287FFD0098BFD8 /* View */,
 				E04E76D0232345D400D744C8 /* Media.xcassets */,
 			);
 			path = Walkthrough;
@@ -304,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0F4629123286E160032B436 /* SlideShowCell.xib in Resources */,
 				E04E76D1232345D400D744C8 /* Media.xcassets in Resources */,
 				180246AA231582C100441D74 /* AuthenticationViewController.xib in Resources */,
 				E0C7991E231492D70020F595 /* MyriadPro-Regular.otf in Resources */,
@@ -337,6 +352,7 @@
 				180246A9231582C100441D74 /* AuthenticationViewController.swift in Sources */,
 				E06CD3972319D69200EA3282 /* CustomPageControl + PageControl.swift in Sources */,
 				E0E30368231D9A0900663225 /* IDEColor + UIColor.swift in Sources */,
+				E0F4629023286E160032B436 /* SlideShowCell.swift in Sources */,
 				E0C79916231492830020F595 /* SplashViewController.swift in Sources */,
 				E008BA7323217BA8006B28C3 /* UITextField + PlaceholderColor.swift in Sources */,
 			);

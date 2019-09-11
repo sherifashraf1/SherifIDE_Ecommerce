@@ -11,14 +11,13 @@ import UIKit
 class SplashViewController: UIViewController {
     @IBOutlet weak var getStartedBtn: CustomBTN!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
   
     }
     
     @IBAction func didPressOnGetStartedBtn(_ sender: Any) {
-        let vc = AuthenticationViewController()
+        let vc = WalkthroughViewController()
         present(vc, animated: true, completion: nil)
     }
     

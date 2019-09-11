@@ -21,7 +21,7 @@ class AuthenticationViewController: UIViewController {
     @IBOutlet weak var userNameTxtFLine: UIView!
     @IBOutlet weak var emailTxtFLine: UIView!
     @IBOutlet weak var passwordTxtFLine: UIView!
-    @IBOutlet weak var userNameStackView: UIStackView!
+    @IBOutlet weak var emailStackView: UIStackView!
     @IBOutlet weak var checkBoxBtn: UIButton!
     
     @IBOutlet weak var agreeWithTermsStackView: UIStackView!
@@ -33,9 +33,7 @@ class AuthenticationViewController: UIViewController {
     @IBOutlet weak var sigbUpBtnButtomConstant: NSLayoutConstraint!
     
     @IBOutlet weak var signUbBtnLandScapeButtomConstant: NSLayoutConstraint!
-    
-    @IBOutlet weak var signUpBtnLandScapeLeadingConstant: NSLayoutConstraint!
-    
+        
     @IBOutlet weak var forgetPasswordBtn: UIButton!
     
 
@@ -94,13 +92,12 @@ class AuthenticationViewController: UIViewController {
         loginButton.isHighlighted = true
         loginButtomLine.backgroundColor = .clear
         signUpButttonLine.backgroundColor = .white
-        userNameStackView.isHidden = false
+        emailStackView.isHidden = false
         agreeWithTermsStackView.isHidden = false
         faceBookBtn.isHidden = false
         signUpBtn.setTitle("SIGNUP", for: .normal)
         sigbUpBtnButtomConstant.constant -= 60
-        signUbBtnLandScapeButtomConstant.constant -= 60
-        signUpBtnLandScapeLeadingConstant.constant -= 200
+        signUbBtnLandScapeButtomConstant.constant -= 70
 
 
         forgetPasswordBtn.isHidden = true
@@ -113,13 +110,12 @@ class AuthenticationViewController: UIViewController {
         signUpButton.isHighlighted = true
         loginButtomLine.backgroundColor = .white
         signUpButttonLine.backgroundColor = .clear
-        userNameStackView.isHidden = true
+        emailStackView.isHidden = true
         agreeWithTermsStackView.isHidden = true
         faceBookBtn.isHidden = true
         signUpBtn.setTitle("LOGIN", for: .normal)
         sigbUpBtnButtomConstant.constant += 60
-        signUbBtnLandScapeButtomConstant.constant += 60
-        signUpBtnLandScapeLeadingConstant.constant += 200
+        signUbBtnLandScapeButtomConstant.constant += 70
 
 
 
