@@ -33,7 +33,6 @@ class AuthenticationViewController: UIViewController {
     @IBOutlet weak var sigbUpBtnButtomConstant: NSLayoutConstraint!
     
     @IBOutlet weak var signUbBtnLandScapeButtomConstant: NSLayoutConstraint!
-        
     @IBOutlet weak var forgetPasswordBtn: UIButton!
     
 

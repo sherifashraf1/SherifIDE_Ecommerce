@@ -1,21 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SlideShowCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SlideShowCell" id="gTV-IL-0wX" customClass="SlideShowCell" customModule="Fabz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="245"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <rect key="frame" x="0.0" y="0.0" width="343" height="245"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide1" translatesAutoresizingMaskIntoConstraints="NO" id="mH3-NJ-HBI">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="245"/>
+                    </imageView>
+                </subviews>
             </view>
+            <constraints>
+                <constraint firstItem="mH3-NJ-HBI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0XZ-5L-WDF"/>
+                <constraint firstItem="mH3-NJ-HBI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OWO-cb-uyC"/>
+                <constraint firstAttribute="trailing" secondItem="mH3-NJ-HBI" secondAttribute="trailing" id="chk-NU-fxI"/>
+                <constraint firstAttribute="bottom" secondItem="mH3-NJ-HBI" secondAttribute="bottom" id="e2p-f4-VLK"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="343" height="245"/>
+            <connections>
+                <outlet property="slideImage" destination="mH3-NJ-HBI" id="IV1-fi-F1M"/>
+            </connections>
+            <point key="canvasLocation" x="114" y="61"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="slide1" width="335" height="280"/>
+    </resources>
 </document>
