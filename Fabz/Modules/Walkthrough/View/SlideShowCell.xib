@@ -19,14 +19,14 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide1" translatesAutoresizingMaskIntoConstraints="NO" id="mH3-NJ-HBI">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="245"/>
+                        <rect key="frame" x="0.0" y="0.0" width="303" height="245"/>
                     </imageView>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="mH3-NJ-HBI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0XZ-5L-WDF"/>
                 <constraint firstItem="mH3-NJ-HBI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OWO-cb-uyC"/>
-                <constraint firstAttribute="trailing" secondItem="mH3-NJ-HBI" secondAttribute="trailing" id="chk-NU-fxI"/>
+                <constraint firstAttribute="trailing" secondItem="mH3-NJ-HBI" secondAttribute="trailing" constant="40" id="chk-NU-fxI"/>
                 <constraint firstAttribute="bottom" secondItem="mH3-NJ-HBI" secondAttribute="bottom" id="e2p-f4-VLK"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>

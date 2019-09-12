@@ -105,7 +105,7 @@ class AuthenticationViewController: UIViewController {
         emailTxtFLine.backgroundColor = UIColor(white: 0.6, alpha: 0.4)
         
     }
-    private func configLoginBtn(){
+      func configLoginBtn(){
         signUpButton.isHighlighted = true
         loginButtomLine.backgroundColor = .white
         signUpButttonLine.backgroundColor = .clear
@@ -115,8 +115,6 @@ class AuthenticationViewController: UIViewController {
         signUpBtn.setTitle("LOGIN", for: .normal)
         sigbUpBtnButtomConstant.constant += 60
         signUbBtnLandScapeButtomConstant.constant += 70
-
-
 
         forgetPasswordBtn.isHidden = false
         emailTxtField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
