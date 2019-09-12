@@ -11,19 +11,21 @@ import UIKit
 class WalkthroughViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
-    
     @IBOutlet weak var underCollectionViewLine: UIView!
     @IBOutlet weak var underCollectionViewLeadingConstant: NSLayoutConstraint!
-    
     @IBOutlet weak var underCollectionViewLandScapeLeadingConstant: NSLayoutConstraint!
-    
     
     var images = [UIImage(named: "slide1"),
                   UIImage(named: "slide2"),
                   UIImage(named: "slide3")]
     
-    
     var counter = 0
+    
+    fileprivate func pageIndicatorSetUp() {
+        let image = UIImage.outlinedEllipse(size: CGSize(width: 7.0, height: 7.0), color: .white)
+        pageControl.pageIndicatorTintColor = UIColor.init(patternImage: image!)
+        pageControl.currentPageIndicatorTintColor = .white
+    }
     
     override func viewDidLayoutSubviews() {
         pageControl.subviews.forEach {
@@ -31,12 +33,6 @@ class WalkthroughViewController: UIViewController {
         }
     }
     
-    fileprivate func pageIndicatorSetUp() {
-        let image = UIImage.outlinedEllipse(size: CGSize(width: 7.0, height: 7.0), color: .white)
-        pageControl.pageIndicatorTintColor = UIColor.init(patternImage: image!)
-        pageControl.currentPageIndicatorTintColor = .white
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         pageIndicatorSetUp()
@@ -46,17 +42,13 @@ class WalkthroughViewController: UIViewController {
         collectionView.isPagingEnabled = true
         underCollectionViewLine.isHidden = false
         collectionAutoSlide()
-
         
-        }
-    
-    
+    }
     
     private func collectionAutoSlide(){
         DispatchQueue.main.async {
             let timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.autoSlideWithTime), userInfo: nil, repeats: true)
             timer.fire()
-       
             
         }
     }
@@ -66,18 +58,16 @@ class WalkthroughViewController: UIViewController {
             self.collectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
             pageControl.currentPage = counter
             counter += 1
-
-
+            
+            
         }else {
             counter = 0
             let index = IndexPath.init(item: counter, section: 0)
             self.collectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
             pageControl.currentPage = counter
-
+            
         }
-
-
-
+        
     }
     
     @IBAction func onClickSkipBtn(_ sender: Any) {
@@ -101,7 +91,7 @@ extension WalkthroughViewController : UICollectionViewDelegate , UICollectionVie
         cell.slideImage.image = images[indexPath.row]
         return cell
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images.count
     }
@@ -118,18 +108,17 @@ extension WalkthroughViewController : UICollectionViewDelegate , UICollectionVie
         case 1:
             self.underCollectionViewLeadingConstant.constant += 4
             self.underCollectionViewLandScapeLeadingConstant.constant += 2
-
+            
         case 2:
             self.underCollectionViewLeadingConstant.constant += 4
             self.underCollectionViewLandScapeLeadingConstant.constant += 2
-
-
+            
         default:
             break
         }
         
     }
-
+    
 }
 
 extension WalkthroughViewController : UICollectionViewDelegateFlowLayout {
@@ -141,14 +130,4 @@ extension WalkthroughViewController : UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.frame.width - 40 , height: collectionView.frame.height)
         
     }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
-    }
-    
- 
 }
