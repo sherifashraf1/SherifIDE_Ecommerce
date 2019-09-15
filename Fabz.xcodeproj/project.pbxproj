@@ -19,6 +19,7 @@
 		E05CC863232312DD007D2D47 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05CC861232312DD007D2D47 /* WalkthroughViewController.swift */; };
 		E05CC864232312DD007D2D47 /* WalkthroughViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E05CC862232312DD007D2D47 /* WalkthroughViewController.xib */; };
 		E06CD3972319D69200EA3282 /* CustomPageControl + PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CD3962319D69200EA3282 /* CustomPageControl + PageControl.swift */; };
+		E0A4E951232EFB1B00C76168 /* ConfigAuthBTNsWithTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4E950232EFB1B00C76168 /* ConfigAuthBTNsWithTextFields.swift */; };
 		E0C79915231492830020F595 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0C79913231492830020F595 /* SplashViewController.xib */; };
 		E0C79916231492830020F595 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C79914231492830020F595 /* SplashViewController.swift */; };
 		E0C79918231492960020F595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0C79917231492960020F595 /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		E05CC861232312DD007D2D47 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		E05CC862232312DD007D2D47 /* WalkthroughViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkthroughViewController.xib; sourceTree = "<group>"; };
 		E06CD3962319D69200EA3282 /* CustomPageControl + PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomPageControl + PageControl.swift"; sourceTree = "<group>"; };
+		E0A4E950232EFB1B00C76168 /* ConfigAuthBTNsWithTextFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigAuthBTNsWithTextFields.swift; sourceTree = "<group>"; };
 		E0C79913231492830020F595 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		E0C79914231492830020F595 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E0C79917231492960020F595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -153,6 +155,14 @@
 			path = Walkthrough;
 			sourceTree = "<group>";
 		};
+		E0A4E94F232EFACD00C76168 /* Config Auth BTNs with TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				E0A4E950232EFB1B00C76168 /* ConfigAuthBTNsWithTextFields.swift */,
+			);
+			path = "Config Auth BTNs with TextFields";
+			sourceTree = "<group>";
+		};
 		E0C7990E231491F40020F595 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +215,7 @@
 			children = (
 				E0E30366231D99DB00663225 /* Extenstions */,
 				E0C79921231495D50020F595 /* ButtonConfig */,
+				E0A4E94F232EFACD00C76168 /* Config Auth BTNs with TextFields */,
 				E0C7991A231492CB0020F595 /* Fonts */,
 			);
 			path = Helpers;
@@ -346,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A4E951232EFB1B00C76168 /* ConfigAuthBTNsWithTextFields.swift in Sources */,
 				E0C799282314981C0020F595 /* CustomBTN.swift in Sources */,
 				E05CC863232312DD007D2D47 /* WalkthroughViewController.swift in Sources */,
 				39DB1F0C22F7B1FF005697F7 /* AppDelegate.swift in Sources */,

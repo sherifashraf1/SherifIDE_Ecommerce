@@ -26,7 +26,7 @@ class AuthenticationViewController: UIViewController {
     
     @IBOutlet weak var agreeWithTermsStackView: UIStackView!
     
-    @IBOutlet weak var signUpBtn: CustomBTN!
+    @IBOutlet weak var signUpBtn: UIButton!
     
     @IBOutlet weak var faceBookBtn: UIButton!
     
@@ -35,6 +35,7 @@ class AuthenticationViewController: UIViewController {
     @IBOutlet weak var signUbBtnLandScapeButtomConstant: NSLayoutConstraint!
     @IBOutlet weak var forgetPasswordBtn: UIButton!
     
+    var configAuthBTNs : ConfigAuthBTNsWithTextFields!
 
     fileprivate func addIconsToTextFields() {
         let imageView1 = UIImageView(frame: CGRect(x: 0, y: 8, width: 20, height: 20))
@@ -83,7 +84,7 @@ class AuthenticationViewController: UIViewController {
         signUpButttonLine.backgroundColor = .white
         addIconsToTextFields()
         checkBoxBtn.layer.cornerRadius = 5
-        
+        configAuthBTNs = ConfigAuthBTNsWithTextFields(textFields: [userNameTxtField , emailTxtField , passwordTxtField], button: signUpBtn)
     }
     
     
