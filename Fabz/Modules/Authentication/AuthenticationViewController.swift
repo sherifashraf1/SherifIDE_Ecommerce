@@ -17,26 +17,20 @@ class AuthenticationViewController: UIViewController {
     @IBOutlet weak var userNameTxtField: UITextField!
     @IBOutlet weak var emailTxtField: UITextField!
     @IBOutlet weak var passwordTxtField: UITextField!
-    
     @IBOutlet weak var userNameTxtFLine: UIView!
     @IBOutlet weak var emailTxtFLine: UIView!
     @IBOutlet weak var passwordTxtFLine: UIView!
     @IBOutlet weak var emailStackView: UIStackView!
     @IBOutlet weak var checkBoxBtn: UIButton!
-    
     @IBOutlet weak var agreeWithTermsStackView: UIStackView!
-    
     @IBOutlet weak var signUpBtn: UIButton!
-    
     @IBOutlet weak var faceBookBtn: UIButton!
-    
     @IBOutlet weak var sigbUpBtnButtomConstant: NSLayoutConstraint!
-    
     @IBOutlet weak var signUbBtnLandScapeButtomConstant: NSLayoutConstraint!
     @IBOutlet weak var forgetPasswordBtn: UIButton!
     
     var configAuthBTNs : ConfigAuthBTNsWithTextFields!
-
+    
     fileprivate func addIconsToTextFields() {
         let imageView1 = UIImageView(frame: CGRect(x: 0, y: 8, width: 20, height: 20))
         let userNameIcon = UIImage(named: "username-icon")
@@ -79,12 +73,51 @@ class AuthenticationViewController: UIViewController {
     }
     
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // listen for keyboard events
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+    }
+    
+    @objc func keyboardWillChange(notification : Notification){
+        if notification.name == UIResponder.keyboardWillShowNotification ||
+            notification.name == UIResponder.keyboardWillChangeFrameNotification {
+            view.frame.origin.y = -60
+        } else {
+            view.frame.origin.y = 0
+            
+        }
+        
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         signUpButttonLine.backgroundColor = .white
         addIconsToTextFields()
         checkBoxBtn.layer.cornerRadius = 5
         configAuthBTNs = ConfigAuthBTNsWithTextFields(textFields: [userNameTxtField , emailTxtField , passwordTxtField], button: signUpBtn)
+        
+        userNameTxtField.delegate = self
+        emailTxtField.delegate = self
+        passwordTxtField.delegate = self
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
     
@@ -98,15 +131,12 @@ class AuthenticationViewController: UIViewController {
         signUpBtn.setTitle("SIGNUP", for: .normal)
         sigbUpBtnButtomConstant.constant -= 60
         signUbBtnLandScapeButtomConstant.constant -= 70
-
-
         forgetPasswordBtn.isHidden = true
-        
         emailTxtField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor(white: 0.6, alpha: 0.4)])
         emailTxtFLine.backgroundColor = UIColor(white: 0.6, alpha: 0.4)
         
     }
-      func configLoginBtn(){
+    func configLoginBtn(){
         signUpButton.isHighlighted = true
         loginButtomLine.backgroundColor = .white
         signUpButttonLine.backgroundColor = .clear
@@ -116,7 +146,7 @@ class AuthenticationViewController: UIViewController {
         signUpBtn.setTitle("LOGIN", for: .normal)
         sigbUpBtnButtomConstant.constant += 60
         signUbBtnLandScapeButtomConstant.constant += 70
-
+        
         forgetPasswordBtn.isHidden = false
         emailTxtField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         emailTxtFLine.backgroundColor = .white
@@ -148,3 +178,21 @@ class AuthenticationViewController: UIViewController {
 }
 
 
+extension AuthenticationViewController: UITextFieldDelegate {
+    
+    func hideKeyboard() {
+        userNameTxtField.resignFirstResponder()
+        emailTxtField.resignFirstResponder()
+        passwordTxtField.resignFirstResponder()
+        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField === userNameTxtField {
+            passwordTxtField.becomeFirstResponder()
+        }else{
+            hideKeyboard()
+        }
+        return true
+    }
+}
